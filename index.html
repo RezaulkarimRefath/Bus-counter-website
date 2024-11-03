@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b1e9cf7794.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/bus-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <header class="md:container md:mx-auto">
+
+        <!-- navber section -->
+
+        <section class="navber-container mt-5 pr-5 pl-5 ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow items-center">
+                            <li><a href="#" class="big-font font-medium text-xs text-[#030712B3]">Home</a></li>
+                            <li><a href="#" class="big-font font-medium text-xs text-[#030712B3]">About</a></li>
+                            <li><a href="#" class="big-font font-medium text-xs text-[#030712B3]">Destination</a>
+                            </li>
+                            <li><a href="#" class="big-font font-medium text-xs text-[#030712B3]">Search</a></li>
+
+                        </ul>
+                    </div>
+                    <a class=" font-extrabold text-black text-3xl">Rajdhani Express</a>
+                </div>
+                <div class="navbar-center hidden lg:flex items-center">
+                    <ul class="menu menu-horizontal px-1 items-center">
+                        <li><a href="#" class="big-font font-medium text-xl text-[#030712B3]">Home</a></li>
+                        <li><a href="#" class="big-font font-medium text-xl text-[#030712B3]">About</a></li>
+                        <li><a href="#" class="big-font font-medium text-xl text-[#030712B3]">Destination</a></li>
+                        <li><a href="#" class="big-font font-medium text-xl text-[#030712B3]">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <button
+                        class="btn  rounded-lg big-font text-xs font-bold text-[#1DD100] bg-[#1dd1001a] hover:text-black">
+                        <p class="big-font text-xl ">Bus</p>
+                        <p><i class="fa-solid fa-bus"></i></p>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- header banner section -->
+
+        <section class="banner-container  mt-5 ">
+            <div>
+                <div>
+                    <div class="hero min-h-screen rounded-3xl " style="background-image: url(images/banner.png);">
+                        <div class="hero-overlay bg-opacity-10"></div>
+                        <div class="hero-content text-neutral-content text-center">
+                            <div class="space-y-4">
+                                <h1 class="text-5xl font-extrabold text-white big-font space-y-4">End-to-End Travel with
+                                    <br> <span class="text-[#1dd100] ">Rajdhani Express</span>
+                                </h1>
+                                <p class="text-[#FFFFFF] text-xs font-normal small-font space-y-4">
+                                    Yes, you can run unit tests and view the results directly within the app. The
+                                    <br>integrated testing features allow for a streamlined .
+                                </p>
+                                <button
+                                    class="btn hover:bg-[#1DD100] bg-white text-black big-font font-bold text-xl">Buy
+                                    Ticket</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex justify-center md:-mt-16 max-sm:flex-col max-sm:mt-10 items-center gap-5 border-red-500">
+
+                        <!-- card-1 -->
+                        <div
+                            class="flex p-8 w-80 shadow-2xl bg-white border-b-4 border-green-500 rounded-3xl text-center items-center gap-5">
+                            <div><i class="text-[#1dd100] text-4xl fa-solid fa-users-viewfinder"></i> </div>
+                            <div class="space-y-2">
+                                <p class="text-3xl text-black small-font font-extrabold">500K+</p>
+                                <p class="small-font text-xs font-normal text-[#03071299]">Registered users</p>
+                            </div>
+
+                        </div>
+
+                        <!-- card-2 -->
+                        <div
+                            class="flex p-8 w-80 shadow-2xl bg-white border-b-4 border-green-500 rounded-3xl text-center items-center gap-5">
+                            <div><i class="fa-solid text-[#1dd100] text-4xl fa-ticket"></i></div>
+                            <div class="space-y-2">
+                                <p class="text-3xl text-black small-font font-extrabold">1.7 lacks</p>
+                                <p class="small-font text-xs font-normal text-[#03071299]">Tickets sold</p>
+                            </div>
+
+                            <!-- card-3 -->
+                        </div>
+                        <div
+                            class="flex p-8 w-80 shadow-2xl bg-white border-b-4 border-green-500 rounded-3xl text-center items-center gap-5">
+                            <div><i class="fa-solid text-[#1dd100] text-4xl fa-landmark"></i> </div>
+                            <div class="space-y-2">
+                                <p class="text-3xl text-black small-font font-extrabold">80K+</p>
+                                <p class="small-font text-xs font-normal text-[#03071299]">Rental partners</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="md:container md:mx-auto mb-10 md:mb-20">
+        <!-- Coupon Section -->
+        <section class="coupon-conatiner md:mt-16 mt-10 ">
+            <div>
+                <div>
+                    <div>
+                        <h2 class="font-bold text-5xl big-font text-center">Best offers for you</h2>
+                    </div>
+                    <div class="flex justify-center gap-10 max-sm:gap-7 mt-10 max-sm:flex-col p-2">
+                        <!-- coupon-1 -->
+                        <div
+                            class="bg-[#FFBF0F] p-8 md:p-14 shadow-2xl border-black border-2  rounded-2xl flex space-x-16 items-center justify-center">
+                            <div>
+                                <h3 class="text-black small-font font-black text-3xl">15% OFF</h3>
+                                <h4 class="text-[#030712cc] font-bold text-xl small-font">on your next purchese</h4>
+                                <p class="text-[#03071280] font-medium small-font text-xs">use by january 2024</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-black small-font font-black text-3xl">NEW15</h3>
+                                <p class="text-[#03071280] font-medium small-font text-xs">Coupon Code</p>
+                            </div>
+                        </div>
+                        <!-- coupon-2 -->
+                        <div
+                            class="bg-[#FFBF0F] p-8 md:p-14 shadow-2xl border-black border-2 rounded-2xl flex space-x-16 items-center justify-center">
+                            <div>
+                                <h3 class="text-black small-font font-black text-3xl">15% OFF</h3>
+                                <h4 class="text-[#030712cc] font-bold text-xl small-font">on your next purchese</h4>
+                                <p class="text-[#03071280] font-medium small-font text-xs">use by january 2024</p>
+                            </div>
+
+                            <div>
+                                <h3 class="text-black small-font font-black text-3xl">NEW15</h3>
+                                <p class="text-[#03071280] font-medium small-font text-xs">Coupon Code</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-10 p-2 max-sm:gap-7 mt-10 max-sm:flex-col">
+                        <button
+                            class="btn border-green-400 rounded-xl  bg-white hover:bg-[#1DD100] big-font font-normal text-xl ">See
+                            All Offers</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ticket section -->
+        <section class="ticket-container md:mt-16 mt-10 bg-[#F7F8F8] rounded-t-3xl">
+
+            <!-- about container -->
+
+            <div class="pt-6 md:pt-16 text-center space-y-6">
+                <h2 class="text-black font-bold text-4xl big-text">Rajdhani Express</h2>
+                <p class="text-[#03071299] small-font font-normal text-xl">Yes, you can run unit tests and view the
+                    results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+            </div>
+
+            <!-- ticket overview section -->
+
+            <div class="flex  items-center justify-center">
+                <!-- route ticket section -->
+                <div class="bg-white flex items-center  mt-20  rounded-2xl gap-5 max-sm:flex-col md: p-10">
+                    <div>
+                        <div class="flex items-center justify-between p-2">
+                            <div class="flex items-center gap-2 md:gap-3 justify-center p-2">
+                                <div><i class="fa-solid text-5xl fa-bus"></i></div>
+                                <div >
+                                    <h2 class="text-black big-font text-2xl font-bold">Rajdhani Express</h2>
+                                    <p class="text-[#03071299] small-font text-xl font-normal">Coach-009-WEB ! Economy
+                                        Class</p>
+                                </div>
+                            </div>
+                            <div>
+                                <button
+                                    class="text-black border small-font shadow-2xl rounded-xl hover:bg-[#1DD10026] text-xl p-4"><i
+                                        class="fa-solid fa-chair"></i> <span> 40</span> Seats left</button>
+                            </div>
+                        </div>
+                        <div class="bg-[#F7F8F8] m-5 rounded-2xl p-5">
+                            <!-- item-1 -->
+                            <div class="flex justify-between p-3 max-sm:flex-col">
+                                <div>
+                                    <p class="text-[#03071299] big-font text-xl font-semibold">Route</p>
+                                </div>
+                                <div>
+                                    <p class="text-black font-semibold text-xl big-font">Dhaka-Sylhet</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- item-2 -->
+                            <div class="flex justify-between p-3">
+                                <div>
+                                    <p class="text-[#03071299] big-font text-xl font-semibold">Departure Time</p>
+                                </div>
+                                <div>
+                                    <p class="text-black font-semibold text-xl big-font">9:00 PM</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- item-3 -->
+                            <div class="flex justify-between max-sm:flex-col p-3 gap-3">
+                                <div class="btn rounded-2xl border bg-[#0307120D] ">
+                                    <h3 class="text-black font-semibold text-xl big-font">Boarding Point
+                                        <span>-Candra</span>
+                                    </h3>
+                                </div>
+                                <div class="btn rounded-2xl border bg-[#0307120D] ">
+                                    <h3 class="text-black font-semibold text-xl big-font">Dropping Point
+                                        <span>-Sahabag</span>
+                                    </h3>
+                                </div>
+                                <div class="btn rounded-2xl border bg-[#0307120D] ">
+                                    <h3 class="text-black font-semibold text-xl big-font">Est. Time <span>- 3
+                                            Hour</span></h3>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ticket price section -->
+                    <div class="p-5 text-center">
+                        <i class="fa-solid text-[#1DD100] text-5xl fa-money-check-dollar"></i>
+                        <p class="text-black font-semibold text-xl big-font">550 Taka</p>
+                        <p class="text-[#03071299] big-font text-xl font-semibold">per Seat</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- bus seat plan section -->
+
+            <div class="bg-[#FFFFFF] mt-10 pt-10 md:p-10">
+                <div class="flex gap-5 max-sm:flex-col p-2">
+                    <!-- selection section -->
+                    <div>
+                        <h2 class="text-black big-font text-2xl font-bold">Select Your Seat</h2>
+                        <hr>
+                        <div class="flex justify-between p-2">
+                            <div class="text-[#03071299] small-font flex items-center space-x-1 p-2">
+                                <i class="fa-solid fa-chair"></i>
+                                <p class="text-xl font-normal">Available</p>
+                            </div>
+                            <div class="text-[#1DD100] small-font flex items-center space-x-1 p-2">
+                                <i class="fa-solid fa-chair"></i>
+                                <p class="text-xl font-normal">Selected</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="flex items-center justify-center">
+                            <div class="grid  grid-cols-5 mt-5 md:mt-10 gap-5">
+                                <div
+                                    class="text-black col-span-4 font-normal text-xl items-center flex flex-col justify-center m-2 w-10 md:w-24 h-14  small-font bg-[#F7F8F8] ">
+                                    <i class="fa-solid fa-door-open"></i>Entance
+                                </div>
+                                <div
+                                    class="text-black col-span-1 font-normal text-xl items-center flex flex-col justify-center m-2 w-10 md:w-24 h-14  small-font bg-[#F7F8F8] ">
+                                    <i class="fa-regular fa-user"></i>Driver
+                                </div>
+
+                                <div
+                                    class="text-black font-normal text-xl  items-center flex justify-center m-2 w-10 md:w-24 h-14  small-font bg-[#F7F8F8] ">
+                                    <p>A</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>A1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>A2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>A3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>A4</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl items-center flex justify-center m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>B</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>B1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>B2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>B3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>B4</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl items-center flex justify-center m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>C</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>C1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>C2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>C3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>C4</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl items-center flex justify-center m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>D</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>D1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>D2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>D3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>D4</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl items-center flex justify-center m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>E</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>E1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>E2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>E3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>E4</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl items-center flex justify-center m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>F</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>F1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>F2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>F3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>F4</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl items-center flex justify-center m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>G</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>G1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>G2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>G3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>G4</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl items-center flex justify-center m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>H</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>H1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>H2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>H3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>H4</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl items-center flex justify-center m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>I</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>I1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>I2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>I3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>I4</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl items-center flex justify-center m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>J</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>J1</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>J2</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>J3</p>
+                                </div>
+                                <div
+                                    class="text-black font-normal text-xl btn m-2 w-10 md:w-24 h-14 border-1 small-font bg-[#F7F8F8] ">
+                                    <p>J4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- total section -->
+                    <div class=" flex  justify-center flex-col text-center p-5 md:p-10   flex-1 space-y-3">
+                        <h2 class="text-black big-font text-2xl font-bold">Selected Seat</h2>
+                        <hr>
+                        <div class="flex flex-col bg-[#F7F8F8] rounded-2xl p-5 items-center justify-center space-y-3">
+                            <div class="flex gap-5 md:gap-10">
+                                <div>
+                                    <p>Seat</p>
+                                </div>
+                                <div>
+                                    <p>Class</p>
+                                </div>
+                                <div>
+                                    <p>Price</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="flex justify-between gap-5 md:gap-10 ">
+
+                                <div class="grid grid-cols-3">
+                                    <div class="grid-cols-2">
+                                        <p>Total Price:</p>
+                                    </div>
+                                    <div class="grid-cols-1">
+                                        <p>BDT <span id="total-price"></span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flex gap-2">
+                                <input type="text" placeholder="Have any coupon?"
+                                    class="input input-bordered w-full max-w-xs" />
+                                <button class="btn border hover:bg-[#1DD100]">Apply</button>
+                            </div>
+                            <div class="flex justify-between gap-5 md:gap-10 ">
+                                <div class="grid grid-cols-3">
+                                    <div class="grid-cols-2">
+                                        <p>Grand Total:</p>
+                                    </div>
+                                    <div class="grid-cols-1">
+                                        <p>BDT <span id="total-price"></span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- contact form section -->
+                        <div>
+                            <div class="space-y-2">
+                                <label class="input input-bordered flex items-center gap-2">
+                                    Full Name*:
+                                    <input type="text" class="grow" placeholder="Daisy" />
+                                </label>
+                                <label class="input required input-bordered flex items-center gap-2">
+                                    Phone Number*:
+                                    <input type="number" required class="grow" placeholder="Enter Your Phone Number" />
+                                </label>
+                                <label class="input input-bordered flex items-center gap-2">
+                                    Email:
+                                    <input type="email" class="grow" placeholder="Enter Valid Email Address" />
+
+                                </label>
+                                <button class="btn hover:bg-[#1DD100] border bg-white">Next</button>
+                                </label>
+                            </div>
+                            <div class="flex justify-between">
+                                <div><button className="btn btn-link"><a href="#">Terms and Conditions</a></button>
+                                </div>
+                                <div><button className="btn btn-link"><a href="#">Cancellation Policy</a></button></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black p-5 md:p-14">
+        <div class="md:container md:mx-auto">
+            <div class="flex justify-between p-5 max-sm:flex-col items-center text-center">
+                <div>  
+                        <h3 class="text-5xl text-white font-extrabold big-font">Rajdhani Express</h3>
+                        
+                        <p class="small-font font-normal text-xl text-white">P-Ticket is a digital platform to make your
+                            <br> daily commuting better.</p>
+                </div>
+                <div>
+                    <h6 class="footer-title text-white font-normal small-font">Download Our app</h6>
+                    <div class="flex gap-2 items-center text-white border p-4 rounded-2xl">
+                        <div><img src="images/playstore.png" alt=""></div>
+                        <div class="">
+                            <p>GET IT ON</p>
+                            <p>Google Play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="flex text-white p-5 justify-between max-sm:flex-col">
+                <div>
+                    <p>@all rights reserved, Rajdhani Express services limited.2024</p>
+                </div>
+                <div class="flex gap-2 md:gap-4 p-2">
+                    <div><a href="#">Terms & condition</a></div>
+                    <div><a href="#">Return & refund policy</a></div>
+                    <div><a href="#">Privacy policy</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
